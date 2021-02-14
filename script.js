@@ -2,6 +2,7 @@
 //let myArray = Array.from(myName); -->El problema de hacerlo así es que convierte los números en Strings
 
 /*EXERCICI 1 i 2*/
+/*
 let myName = ['C','L', 4 ,'R',4];
 
 for (i = 0; i< myName.length; i++){
@@ -16,10 +17,12 @@ for (i = 0; i< myName.length; i++){
     }
 }
 /*EXERCICI 3*/
+/*
 let mapaNombre = {C:1, L:2, A:3, R:2, E:1} ;
 console.log(mapaNombre);
 
 /*EXERCICI 4*/
+/*
 function namePrinter (array_name, array_surname){
 
     let length_surname = array_surname.length;
@@ -35,3 +38,20 @@ function namePrinter (array_name, array_surname){
 let mySurname = ['A', 'L', 'E', 'R'];
 namePrinter(myName, mySurname);
 console.log (myName);
+*/
+
+/* EMAIL FINDER */
+
+function emailFinder(inputText){
+    const email = /\w+(?=@)@(?<=@)\w+.(?<=.)\w+/g;
+    let match;
+    let emailList = [];
+
+    while ((match = email.exec(inputText)) !== null){
+        emailList.push(match[0]);
+    }
+    console.log(emailList);
+}
+
+text = "lorem1 @ osj ajejr mail1@mail1.com erwe mail3@mail3 rer fadaf mail2@mail2.es fsfstr."
+emailFinder (text);
