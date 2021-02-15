@@ -1,0 +1,39 @@
+body{
+    background-color: #c5d7bd;
+    font-family: sans-serif;
+}
+#outputWindow{
+    margin: 30px auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    min-height: 6em;
+    width: 80%;
+    color: white;
+    background-color: #9fb8ad;
+    padding: 1%;
+    font-size: 1.2em;
+
+    
+}
+button{
+    height: 5em;
+    color: #fb743e;
+    background-color: #383e56;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    width: 10em;
+    margin: 1em;
+ 
+}
+#buttons{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#instruccions{
+    text-align: center;
+}
